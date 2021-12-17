@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Airlines</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class = "container">
+        <div class = "wrapper_header">
+            <a href = "#top" class = "logo element-animation"> В начало! | </a>
+            <ul class = "mnu_top">
+                
+                <li><a href = "#main" class = "yakor element-animation"> О нас </a></li>
+                <li><a href = "#advantages" class = "yakor element-animation"> К билетам </a></li>
+                <li><a href = "#contacts" class = "yakor element-animation"> Наши контакты </a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container2" id="top">
+
+    <div class="text ">
+    <h2>Привет!</h2>
+    <h5>Здесь ты найдешь билеты в любоую страну мира.</h5>
+    <br>
+
+    <a href="#contacts" class="knopka yakor"> Просмотр билетов.</a>
+    </div>
+
+    <div class="image ">
+    <img onmouseover="onMouseIconComm(this)" onmouseout="outMouseIconComm(this)" src="img/fly.jpg" width="100%" height="100%">
+    </div>
+
+
+
+</div>
+
+<div class="container3" id="main">
+    <div >
+    <br>
+    <h3 class="element-animation">
+       Aviation Ground Seminars
+    </h3>
+    <br>
+    <br>
+    <br>
+    <h4 class="element-animation"> Сегодня "AGS" носит статус национального перевозчика России и является одной из крупнейших авиакомпанией страны. Флот компании состоит из современных авиалайнеров российского и зарубежного производства, а география полетов охватывает как маршруты внутри России, так и зарубежные направления в Европе, Азии, Америке и Африке.
+    </h4>
+    <div id="slides">
+        <img src="img/банер1.jpg" class="slide showing" height="600">
+        <img src="img/банер2.jpg" class="slide" height="600">
+        <img src="img/банер3.jpg" class="slide" height="600">
+
+    </div>
+    </div>
+
+    <h6 class="element-animation">Здесь вы можете просмотреть информацию о рейсах</h6>
+    <div id="advantages">
+    <div class="num">
+    <img id="image" src="img/bilet1.jpg" onClick="imgsrc();" height="600" width="850" >
+        <h7 class="element-animation"> Мы находим самые дешёвые авиабилеты без наценки и комиссии, а также информацию о расписании рейсов, популярных направлениях.</h7>
+    </div>
+    </div>
+
+        <div class="container4" id="contacts">
+          <div class="form">
+            <form class="contact_form" action="mailto:artem.letavin@yandex.ru" method="post" name="contact_form" enctype="text/plain">
+
+                  <ul>
+
+                      <li>
+                          <h2 class="element-animation">Свяжитесь с нами</h2>
+                          <span class="required_notification element-animation">Регистрация</span>
+                      </li>
+                      <li>
+                          <label class="element-animation">ФИО:</label>
+                          <input type="text" name="name" placeholder="Иванов Иван Иванович" required/>
+                      </li>
+                      <li>
+                          <label class="element-animation">Email:</label>
+                          <input type="text" name="email" placeholder="email@mail.ru" required  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" />
+
+                      </li>
+                      <li>
+                          <label class="element-animation" >Телефон:</label>
+                          <input type="text" name="website" placeholder="(+7/8)89876543210" required pattern="(8|7).+"/>
+
+                      </li>
+                      <li>
+                          <label class="element-animation" >Адресс:</label>
+                          <textarea name="message" cols="40" rows="6" required > </textarea>
+                      </li>
+                      <li>
+                          <button class="submit element-animation" type="submit">Отправить</button>
+                      </li>
+
+
+
+
+
+                  </ul>
+              </form>
+          </div>
+         <div class="contact">
+             <h8 class="element-animation"> Наши контакты</h8>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <h10 class="element-animation">По всем вопросам обращаться: </h10>
+             <br>
+             <h9 font-size="25px" class="element-animation">bestairlines33@mail.ru</h9>
+             <br>
+             <br>
+             <h9 class="element-animation">89876543210</h9>
+             <br>
+             <br>
+
+             <br>
+             <br>
+             
+             
+
+        </div>
+        </div>
+
+
+</div>
+
+
+
+
+</body>
+<script src="slidertext.js"></script>
+<script src="yakor.js"></script>
+<script src="scripts.js"></script>
+<script src="slide.js"></script>
+<script src="numb.js"></script>
+</html>
